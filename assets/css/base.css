@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root{
+    --color-1:#1e1e1e;
+    --color-2:#ff589e;
+    --color-3:#fff;
+    --color-4:#777;
+    --color-5:#8261ee;
+    --color-6:#f2f2fe;
+    --color-7:#6F8BA4;
+    --color-8:#a759d1;
+    --font:'Raleway', sans-serif;
+}
+*{
+    font:var(--font);
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+.button{
+    font-size: 15px;
+    border-radius: 20px;
+    padding: 12px 20px;
+    color:var(--color-3);
+    text-transform: uppercase;
+    border:0;
+}
+.button-2{
+    background: var(--color-5);
+    margin-top: 30px;
+    transition: all 0.5s ease-in-out;
+}
+.button-2:hover{
+    background: var(--color-2);
+}
