@@ -4,7 +4,7 @@
     z-index: 999;
     top:30px;
     left:0px;
-    right:0px;
+    width: 100%;
 }
 .header .header-menu ul{
     display: flex;
@@ -33,11 +33,14 @@
 .header .header-menu a{
     display: block;
     padding: 28px 20px;
-    font-size: 15px;
+    font-size: 14px;
     color: var(--color-1);
 }
 .header .header-menu a:hover{
     color:var(--color-2)
+}
+.header .header-menu a.active{
+    color:var(--color-2);
 }
 
 /* responsive */
@@ -240,6 +243,9 @@
     background-size: cover;
     padding: 80px;
 }
+.section-3 .inner-icon{
+    margin-bottom: 15px;
+}
 .section-3 .inner-wrap{
     display: flex;
 
@@ -276,10 +282,6 @@
 }
 .section-3 .inner-box:hover{
     transform: translate(0px,-15px);
-}
-.section-3 .inner-icon i{
-    color: var(--color-5);
-    font-size: 26px;
 }
 .section-3 .inner-box .inner-title {
     font-size: 18px;
@@ -434,6 +436,7 @@
     line-height: 40px;
     text-align: center;
     margin: 0px;
+    margin-bottom: 10px;
 }
 .section-5 .inner-list{
     margin: 0;
@@ -491,18 +494,18 @@
     text-align: center;
     font-size: 18px;
 }
-.section-6 .my-col{
+.section-6 .my-col .inner-number{
     position: relative;
     transition: all 0.4s ease-in-out;
 }
-.section-6 .my-col:hover {
-    transform: translate(0px, -15px);
+.section-6 .my-col:hover .inner-number {
+    margin-top: -15px;
 }
-.section-6 .my-col-1{
+.section-6 .my-col-1 .inner-number{
     transition: all 0.4s ease-in-out;
 }
-.section-6 .my-col-1:hover{
-    transform: translate(0px, -15px);
+.section-6 .my-col-1:hover .inner-number{
+    margin-top: -15px;
 }
 .section-6 .my-col::after{
     content: "";
@@ -513,8 +516,8 @@
     height: 32px;
     top: 70px;
     left: 90%;
-    transition: fixed;
 }
+
 /* responsive */
 @media (max-width: 991.98px){
     .section-6 .my-col::after{
@@ -679,6 +682,11 @@
     justify-content: center;
     color: var(--color-8) ;
     margin: 20px 10px;
+    transition: all 0.5s ease-in-out;
+}
+.footer .inner-social a:hover{
+    background: var(--color-2);
+    color:#fff;
 }
 .footer .inner-desc{
     color: var(--color-3);
