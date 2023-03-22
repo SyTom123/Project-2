@@ -28,8 +28,8 @@
 }
 .header ul li{
     list-style-type: none;
+   
 }
-
 .header .header-menu a{
     display: block;
     padding: 28px 20px;
@@ -37,11 +37,12 @@
     color: var(--color-1);
 }
 .header .header-menu a:hover{
-    color:var(--color-2)
-}
-.header .header-menu a.active{
     color:var(--color-2);
 }
+.header .header-menu .active{
+    color:var(--color-2);
+}
+
 
 /* responsive */
 @media (max-width: 1199.98px){
